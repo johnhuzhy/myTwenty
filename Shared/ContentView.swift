@@ -9,8 +9,25 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        NavigationView {
+            List(0 ..< 20 ) {item in
+                NavigationLink(destination: Text("Detail")) {
+                    Image(systemName: "heart")
+                        .resizable()
+                        .foregroundColor(.red)
+                        .frame(width: 50, height: 50, alignment: .center)
+                    VStack (alignment: .leading, spacing: 0){
+                        Text("Hello, Stella!")
+                            .foregroundColor(.blue)
+                        Text("Detail")
+                            .font(.subheadline)
+                            .foregroundColor(.gray)
+                    }
+                }
+
+            }
+            .navigationBarTitle(Text("Navigation Bar"))
+        }
     }
 }
 
