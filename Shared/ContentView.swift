@@ -11,21 +11,27 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(0 ..< 20 ) {item in
-                NavigationLink(destination: Text("Detail")) {
+                // 导航条迁移
+                NavigationLink(destination: DetailView()) {
                     Image(systemName: "heart")
+                        // 可调节大小
                         .resizable()
                         .foregroundColor(.red)
+                        // 大小设置
                         .frame(width: 50, height: 50, alignment: .center)
                     VStack (alignment: .leading, spacing: 0){
                         Text("Hello, Stella!")
+                            // 颜色设置
                             .foregroundColor(.blue)
                         Text("Detail")
+                            // 字体设置
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
                 }
 
             }
+            // 导航条标题
             .navigationBarTitle(Text("Navigation Bar"))
         }
     }
