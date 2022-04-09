@@ -15,6 +15,8 @@
 		E3007CCE27FC6D6300FB5251 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3007CBB27FC6D6300FB5251 /* Assets.xcassets */; };
 		E3007CDB27FC7BE800FB5251 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3007CDA27FC7BE800FB5251 /* DetailView.swift */; };
 		E3007CDC27FC7BE800FB5251 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3007CDA27FC7BE800FB5251 /* DetailView.swift */; };
+		E325C0752801AC9600B101FC /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E325C0742801AC9600B101FC /* InputView.swift */; };
+		E325C0762801AC9600B101FC /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E325C0742801AC9600B101FC /* InputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,7 @@
 		E3007CC627FC6D6300FB5251 /* myTwenty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = myTwenty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3007CC827FC6D6300FB5251 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		E3007CDA27FC7BE800FB5251 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		E325C0742801AC9600B101FC /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 				E3007CB927FC6D6300FB5251 /* myTwentyApp.swift */,
 				E3007CDA27FC7BE800FB5251 /* DetailView.swift */,
 				E3007CBA27FC6D6300FB5251 /* ContentView.swift */,
+				E325C0742801AC9600B101FC /* InputView.swift */,
 				E3007CBB27FC6D6300FB5251 /* Assets.xcassets */,
 			);
 			path = Shared;
@@ -181,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3007CCB27FC6D6300FB5251 /* ContentView.swift in Sources */,
+				E325C0752801AC9600B101FC /* InputView.swift in Sources */,
 				E3007CDB27FC7BE800FB5251 /* DetailView.swift in Sources */,
 				E3007CC927FC6D6300FB5251 /* myTwentyApp.swift in Sources */,
 			);
@@ -191,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E3007CCC27FC6D6300FB5251 /* ContentView.swift in Sources */,
+				E325C0762801AC9600B101FC /* InputView.swift in Sources */,
 				E3007CDC27FC7BE800FB5251 /* DetailView.swift in Sources */,
 				E3007CCA27FC6D6300FB5251 /* myTwentyApp.swift in Sources */,
 			);
