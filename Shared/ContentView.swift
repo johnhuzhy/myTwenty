@@ -31,14 +31,14 @@ struct ContentView: View {
                 }
                 // 导航条迁移
                 NavigationLink(destination: InputView()) {
-                    Image(systemName: "heart")
+                    Image(systemName: "pencil.circle")
                         // 可调节大小
                         .resizable()
-                        .foregroundColor(.red)
+                        .foregroundColor(.green)
                         // 大小设置
                         .frame(width: 50, height: 50, alignment: .center)
                     VStack (alignment: .leading, spacing: 0){
-                        Text("Hello, Stella!")
+                        Text("Stella, Please Input!")
                             // 颜色设置
                             .foregroundColor(.blue)
                         Text("InputView")

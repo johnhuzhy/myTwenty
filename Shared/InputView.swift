@@ -7,12 +7,35 @@
 
 import SwiftUI
 
+struct HeaderView: View {
+    @Binding var title:String
+    var counter = 0
+    
+    init(title: Binding<String>) {
+        self._title = title
+        self.counter = self._title.wrappedValue.count
+    }
+    
+    var body: some View{
+        VStack {
+            Text(self.title)
+                .font(.title)
+                .foregroundColor(.red)
+            Text("--- \(self.counter)桁文字 ---")
+                .font(.title2)
+                .foregroundColor(.orange)
+        }
+    }
+}
+
 struct InputView: View {
     @State private var title = "最高の教科書"
     @State private var inputText = ""
     
     var body: some View {
         VStack {
+            HeaderView(title: self.$title)
+                .padding(15)
             // 数据单向绑定 不需要$
             Text(self.title)
                 .font(.largeTitle)
